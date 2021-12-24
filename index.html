@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- test -->
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="myprefix_topnav">
+        <a class="active" href="#analyze">Analyze Ngram</a>
+        <a href="#find">Find Ngram</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </div>
+    <!-- test111112 -->
+    <div class="container" id="analyze">
+        <!-- search -->
+        <div class="search">
+            <div class="search_ngram">
+                <label for=" ">Search By N_GRAM:</label>
+                <input type="text" name="text" class="ngram"></input>
+            </div>
+        <div class="search_frequencies">
+            <label for=" ">Search By Frequencies:</label>
+            <input type="text" name="text" class="frequencies"></input>
+            </div>
+        </div>
+         <!-- text area -->
+        <div class="block-file">
+            <div class="text-area">
+                <textarea type="text" name="text" class="text"></textarea> 
+            </div>
+            <div class="import">
+                    <label>Select a File to Load:</label>
+                    <input type="file" id="fileToLoad">
+                    <div class="filter-line">
+                        <button type="button" onclick="loadFileAsText()" id="loadFile">Load Selected
+                            File</button>
+                            <button id="submit" type="button" style="margin-top: 10px;"> Analyze</button>
+                    </div>
+            </div>
+        </div>
+        <div class="block-save">
+            <input type="checkbox" id="myCheck" onclick="myCheckBox()"></input>
+            <label>Include Source Text:</label>
+            <input id="inputFileNameToSaveAs"></input>
+            <button onclick="saveTextAsFile()" style="margin-right: 100px">Save to File</button>
+            <button id="server1" style="margin-right: 40px" type="button">Save to Server</button>
+            <button id="listFiles" style="margin-right: 38px;" type="button">List Files To Server</button>
+            <button id="sum" style="margin-right: 50px;" type="button">Sum All</button>
+        </div>
+        <div class="block-import">
+            <label>Import to File CSV:</label>
+            <input type="file" id="csv" name="csv[]" multiple=""/>
+        </div>
+        <div class="list">
+            <div id="folders"></div>
+            <div id="files"></div>
+        </div>
+        <div class="data-table">
+            <div class="card" id="report-area">
+                <div class="card-body">
+                    <span class="ngram-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                                class="fas fa-plus fa-2x add-new" aria-hidden="true"></i></a></span>
+                    <table id="dtBasic" class="table table-bordered table-striped text-center" style="height:100%">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Id</th>
+                                <th class="text-center">Word</th>
+                                <th class="text-center">Count</th>
+                                <th class="text-center">Frequency</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<!-- "/" -->
+</html>
+hhhhh

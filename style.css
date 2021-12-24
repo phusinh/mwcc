@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkgrey;
+  }
+
+  .myprefix_topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  
+  .myprefix_topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .myprefix_topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .myprefix_topnav .icon {
+    display: none;
+  }
+  .search {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin: 3%;
+    margin-left: 10%;
+  }
+  .search_ngram{
+    width: 40%;
+  }
+  .search_frequencies{
+    width: 40%;
+  }
+  .block-file{
+    width: 100%;
+    display: flex;
+    margin: 3%;
+  }
+  .text-area{
+    width: 60%;
+  }
+  .text{
+    width: 100%;
+    height: 200px;
+  }
+  .import{
+    width: 30%;
+    margin: 4%;
+  }
+  .block-save{
+    margin: 3%;
+  }
+  .list{
+    margin: 3%;
+  }
+  .block-import{
+    margin: 3%;
+  }
+  .data-table{
+    margin: 3%;
+  }
+  
+  @media screen and (max-width: 100%) {
+    .topnav_myprefix.responsive {position: relative;}
+    .topnav_myprefix.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav_myprefix.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width:600px) {
+    .search_ngram{
+        width: 100%;
+    }
+    .search_frequencies{
+        width: 100%;
+    }
+  }
