@@ -1,1 +1,1 @@
-thông tin
+thông tin khóa học
